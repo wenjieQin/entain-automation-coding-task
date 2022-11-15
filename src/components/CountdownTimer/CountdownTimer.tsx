@@ -41,7 +41,7 @@ const _CountdownTimer = ({ advertisedStart }: Props): JSX.Element => {
   }, [advertisedStart]);
 
   return (
-    <p>{countdownString}</p>
+    <p data-testid="count-down-timer">{countdownString}</p>
   )
 }
 

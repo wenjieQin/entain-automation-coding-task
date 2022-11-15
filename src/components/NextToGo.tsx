@@ -33,7 +33,10 @@ const _NextToGo = (): JSX.Element => {
       <div>
         <h1 data-testid="page-title">Next To Go Races</h1>
         <CategoryFilters categoryFilters={categoryFilters} onFilterChange={toggleCategoryFilter} />
-        {isLoading ? <LoadingSpinner /> : <NextToGoList races={races} />}
+       <div data-testid="LoadingSpinner">
+       {isLoading ? <LoadingSpinner /> : <NextToGoList races={races} />}
+       </div>
+        
       </div>
     </div>
   );

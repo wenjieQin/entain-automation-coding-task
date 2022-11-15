@@ -7,7 +7,7 @@ type Props = { race: ListRace };
 
 const _NextToGoListItem = ({ race }: Props): JSX.Element => {
   return (
-    <div className="item">
+    <div className="item" data-testid="Next2go">
       <div className="race-name">
         <b className="race-number">R{race.raceNumber}</b>
         <p>{race.meetingName}</p>
