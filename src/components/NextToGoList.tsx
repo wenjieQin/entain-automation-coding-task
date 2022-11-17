@@ -6,7 +6,7 @@ type Props = { races: ListRace[] }
 
 const _NextToGoList = ({ races }: Props): JSX.Element => {
   return (
-    <div>
+    <div data-testid="next2go-list">
       {races.map((race) => <NextToGoListItem key={race.raceId} race={race} />)}
     </div>
   );
